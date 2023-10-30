@@ -8,7 +8,12 @@ namespace Lidl
 {
     public class Lagerist : Person
     {
-        public int Groesse { get; set; }    
+        public int Groesse { get; set; }  
+        
+        public Lagerist()
+        {
+            Console.WriteLine("ctor Lagerist");
+        } 
 
         public void LagereEin()
         {

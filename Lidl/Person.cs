@@ -11,6 +11,10 @@ namespace Lidl
         public string Name {  get; set; }   
         public string Vorname {  get; set; }
         protected int Id { get; set; }
+        public Person()
+        {
+            Console.WriteLine("ctor Person");
+        }
 
         public virtual void Esse()
         {
