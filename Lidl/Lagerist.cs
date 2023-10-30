@@ -24,6 +24,5 @@ namespace Lidl
         {
             Console.WriteLine($"Lagerist: {Vorname} {Name} {Id} trägt mit Stapler.");
         }
-
     }
 }

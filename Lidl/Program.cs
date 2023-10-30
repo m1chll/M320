@@ -26,11 +26,15 @@
 
             foreach(var person in personen)
             {
+                person.Trage();
                 person.Esse();
+                person.Atme();
             }
 
             Console.ReadLine();
             Console.ReadLine();
+
+
 
 
         }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Lidl
 {
-    public abstract class Person
+    public abstract class Person : Saeugetier
     {
         public string Name {  get; set; }   
         public string Vorname {  get; set; }
@@ -27,5 +27,10 @@ namespace Lidl
         //}
 
         public abstract void Trage();
+
+        public override void Atme()
+        {
+            Console.WriteLine("Atme");
+        }
     }
 }
