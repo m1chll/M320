@@ -16,6 +16,7 @@ public class StringStackTest
         stack.Push("One");
         stack.Push("Two");
         stack.Push("Three");
+        stack.Push("Four");
 
         // Assert
         Assert.AreEqual("Three", stack.Pop());
@@ -23,6 +24,7 @@ public class StringStackTest
         Assert.AreEqual("One", stack.Pop());
         Assert.AreEqual("Stack is empty", stack.Pop());
     }
+
 
     [TestMethod]
     public void TestPeek()
@@ -42,6 +44,7 @@ public class StringStackTest
         Assert.AreEqual("Stack is empty", stack.Peak());
     }
 
+
     [TestMethod]
     public void TestClear()
     {
@@ -58,6 +61,7 @@ public class StringStackTest
         Assert.AreEqual(true, stack.IsEmpty);
     }
 
+
     [TestMethod]
     public void TestCount()
     {
@@ -72,6 +76,7 @@ public class StringStackTest
         // Assert
         Assert.AreEqual(3, stack.Count);
     }
+
 
     [TestMethod]
     public void TestIsFull()

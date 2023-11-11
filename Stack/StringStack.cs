@@ -14,41 +14,41 @@ public class StringStack
     private int CurrentPosition { get; set; }
     public bool IsEmpty
     {
-        get { return CurrentPosition == 0; }
+        get { return CurrentPosition == -1; }
     }
 
     public int Count
     {
-        get { return CurrentPosition; }
+        get { return CurrentPosition + 1; }
     }
 
     public bool IsFull
     {
-        get { return CurrentPosition == StringArray.Length; }
+        get { return CurrentPosition == StringArray.Length - 1; }
     }
 
     public StringStack(int size)
     {
         StringArray = new string[size];
-        CurrentPosition = 0; 
+        CurrentPosition = -1;
     }
 
     public void Push(string val)
     {
-        if (CurrentPosition != StringArray.Length)
+        if (CurrentPosition < StringArray.Length - 1)
         {
-            StringArray[CurrentPosition] = val;
             CurrentPosition++;
+            StringArray[CurrentPosition] = val;
         }
     }
 
     public string Pop()
     {
-        if (CurrentPosition > 0) 
+        if (CurrentPosition >= 0)
         {
-            CurrentPosition--;
             string poppedValue = StringArray[CurrentPosition];
             StringArray[CurrentPosition] = null;
+            CurrentPosition--;
             return poppedValue;
         }
 
@@ -57,9 +57,9 @@ public class StringStack
 
     public string Peak()
     {
-        if (CurrentPosition > 0)
+        if (CurrentPosition >= 0)
         {
-            return StringArray[CurrentPosition - 1];
+            return StringArray[CurrentPosition];
         }
 
         return "Stack is empty";
@@ -68,6 +68,7 @@ public class StringStack
     public void Clear()
     {
         Array.Clear(StringArray, 0, StringArray.Length);
-        CurrentPosition = 0;
+        CurrentPosition = -1; 
     }
 }
+
