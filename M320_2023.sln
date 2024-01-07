@@ -13,9 +13,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GeometrischeFiguren", "Geom
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UserManager", "UserManager\UserManager.csproj", "{C5693BA5-3778-44A6-B3A3-D6DBD84EE8CC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringStack", "Stack\StringStack.csproj", "{F54FAF40-14FC-4F91-8BB2-FA5D1C0EE03A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StringStack", "Stack\StringStack.csproj", "{F54FAF40-14FC-4F91-8BB2-FA5D1C0EE03A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StackTest", "StackTest\StackTest.csproj", "{4CE2592D-54DE-4FEB-8CC2-437970DDC479}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StackTest", "StackTest\StackTest.csproj", "{4CE2592D-54DE-4FEB-8CC2-437970DDC479}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PalindromeChecker", "PalindromeChecker\PalindromeChecker.csproj", "{0CD3C8CF-B355-40FE-8CCA-A2EEAAB355D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringCalculator", "StringCalculator\StringCalculator.csproj", "{95BA711B-F187-47D4-B155-70EBF0AA02EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringCalculator.Tests", "StringCalculator.Test\StringCalculator.Tests.csproj", "{44BC77A4-95D4-44D5-A93D-700C79118347}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +57,18 @@ Global
 		{4CE2592D-54DE-4FEB-8CC2-437970DDC479}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4CE2592D-54DE-4FEB-8CC2-437970DDC479}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4CE2592D-54DE-4FEB-8CC2-437970DDC479}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0CD3C8CF-B355-40FE-8CCA-A2EEAAB355D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CD3C8CF-B355-40FE-8CCA-A2EEAAB355D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CD3C8CF-B355-40FE-8CCA-A2EEAAB355D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CD3C8CF-B355-40FE-8CCA-A2EEAAB355D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95BA711B-F187-47D4-B155-70EBF0AA02EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95BA711B-F187-47D4-B155-70EBF0AA02EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95BA711B-F187-47D4-B155-70EBF0AA02EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95BA711B-F187-47D4-B155-70EBF0AA02EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44BC77A4-95D4-44D5-A93D-700C79118347}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44BC77A4-95D4-44D5-A93D-700C79118347}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44BC77A4-95D4-44D5-A93D-700C79118347}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44BC77A4-95D4-44D5-A93D-700C79118347}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

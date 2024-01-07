@@ -4,19 +4,17 @@
     {
         static void Main(string[] args)
         {
-            StringStack stack = new StringStack(3);
+            var stack = new GenericStack<char>(3);
 
-            stack.Push("One");
-            stack.Push("Two");
-            stack.Push("Three");
+            stack.Push('O');
+            stack.Push('n');
+            stack.Push('e');
 
-            stack.Clear();
 
             Console.WriteLine(stack.Pop());
             Console.WriteLine(stack.Pop());
             Console.WriteLine(stack.Pop());
             Console.WriteLine(stack.Pop());
-
         }
     }
 }
